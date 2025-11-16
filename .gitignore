@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+.vscode/
+
+
+# macOS
+.DS_Store
+
+.prettierignore
+.prettierrc

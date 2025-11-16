@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "jimp": "^1.6.0",
+    "node-addon-api": "^8.5.0"
+  }
+}
