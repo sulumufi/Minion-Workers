@@ -359,48 +359,6 @@ for (let i = 0; i < MAX_WORKERS; i++) {
 
 ---
 
-## Common Issues & Solutions
-
-### Issue: "Cannot find module './minion.js'"
-
-**Solution:** Make sure you're running from the project root:
-
-```bash
-cd /path/to/WorkerThreads
-node src/gruWithFixedMinions.js
-```
-
-### Issue: Output folder empty
-
-**Solution:** Check if input/minion has images:
-
-```bash
-ls input/minion/
-```
-
-### Issue: Error with Jimp
-
-**Solution:** Reinstall dependencies:
-
-```bash
-rm -rf node_modules
-npm install
-```
-
----
-
-## Success Criteria
-
-You'll know it's working when:
-
-- Console shows progress: "X/52 thumbnails created!"
-- `output/` folder contains 52 new images
-- Each thumbnail is 200x200 pixels
-- All thumbnails have "thumb-" prefix
-- Your computer's CPU usage spikes briefly (workers doing their job!)
-
----
-
 ## What You've Learned
 
 By exploring this project, you now understand:
@@ -410,14 +368,6 @@ By exploring this project, you now understand:
 3. **Thread Pool Pattern:** Efficient resource management
 4. **Worker Communication:** `postMessage` and event listeners
 5. **Real-World Application:** Image processing pipeline
-
----
-
-## 📖 Further Reading
-
-- [Node.js Worker Threads Documentation](https://nodejs.org/api/worker_threads.html)
-- [Jimp Image Processing Library](https://github.com/jimp-dev/jimp)
-- [Understanding CPU-bound vs I/O-bound](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
 
 ---
 
